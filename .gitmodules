@@ -1,0 +1,9 @@
+[submodule "prism"]
+	path = prism
+	url = git@github.com:cpp-prism/prism.git
+[submodule "prism_container"]
+	path = prism_container
+	url = git@github.com:cpp-prism/prism_container.git
+[submodule "prism_rn_core"]
+	path = prism_rn_core
+	url = git@github.com:nocanstillbb/prism_rn_core.git
