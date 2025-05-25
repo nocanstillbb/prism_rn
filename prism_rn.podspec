@@ -20,10 +20,18 @@ Pod::Spec.new do |s|
 
   s.xcconfig = {
     'HEADER_SEARCH_PATHS' => [
-      "\"#{root}/prism\"",
-      "\"#{root}/prism_container\"",
-      "\"#{root}/prism_rn_core\"",
+      "\"#{root}/prism/\"",
+      "\"#{root}/prism/include\"",
+      "\"#{root}/prism_container/\"",
+      "\"#{root}/prism_container/include\"",
+      "\"#{root}/prism_rn_core/\"",
+      "\"#{root}/prism_rn_core/include\"",
     ].join(' ')
+  }
+
+  s.pod_target_xcconfig = {
+    'CLANG_CXX_LANGUAGE_STANDARD' => 'c++17',
+    'CLANG_CXX_LIBRARY' => 'libc++'
   }
 
 end
